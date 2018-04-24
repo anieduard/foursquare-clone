@@ -623,7 +623,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA9AE553FC7B686642CC7144 /* Pods-FoursquareTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6ZM4T69MX;
@@ -645,7 +644,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3473E1623FADDDBE8039F9D8 /* Pods-FoursquareTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6ZM4T69MX;
