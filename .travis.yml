@@ -1,0 +1,8 @@
+osx_image: xcode9
+language: objective-c
+cache:
+- bundler
+- cocoapods
+
+script:
+  - xcodebuild clean test -quiet -workspace Foursquare.xcworkspace -scheme Foursquare -destination 'platform=iOS Simulator,name=iPhone 5s'
