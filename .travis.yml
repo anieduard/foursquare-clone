@@ -6,7 +6,6 @@ cache:
 
 before_install:
   - brew update
-  - pod repo update
 
 script:
   - xcodebuild clean test -quiet -workspace Foursquare.xcworkspace -scheme Foursquare -destination 'platform=iOS Simulator,name=iPhone 5s'
