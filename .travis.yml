@@ -6,3 +6,7 @@ cache:
 
 script:
   - xcodebuild clean test -quiet -workspace Foursquare.xcworkspace -scheme Foursquare -destination 'platform=iOS Simulator,name=iPhone 5s'
+  - bundle exec danger
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
