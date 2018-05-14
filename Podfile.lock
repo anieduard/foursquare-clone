@@ -38,7 +38,7 @@ DEPENDENCIES:
   - Swinject (= 2.1.1)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Hero
     - Kingfisher
@@ -68,4 +68,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5d1313402cfe3e05eecdac561fe542c0f465cb59
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.2
