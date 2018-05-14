@@ -9,7 +9,7 @@ target 'Foursquare' do
   pod 'ReSwift',                  '4.0.0'
   pod 'Swinject',                 '2.1.1'
   pod 'Hero',                     '1.1.0'
-  pod 'SwiftLint',                '0.23.1'
+  pod 'SwiftLint',                '0.25.1'
   pod 'Moya/RxSwift',             '10.0.0'
   pod 'Moya-ModelMapper/RxSwift', '6.0.0'
   pod 'Kingfisher',               '4.6.2'

@@ -227,6 +227,7 @@
 				10DCECA4208E556E003E78C0 /* Frameworks */,
 				10DCECA5208E556E003E78C0 /* Resources */,
 				060B37F5888FA2D275C2A2CA /* [CP] Embed Pods Frameworks */,
+				1056603620A603CF00F11051 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -353,6 +354,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foursquare/Pods-Foursquare-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1056603620A603CF00F11051 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TIMEFORMAT='Lint duration: %R seconds'\n\ntime {\n    ${PODS_ROOT}/SwiftLint/swiftlint lint\n}";
 		};
 		C40D73D90E6798C5B7A3C7FE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

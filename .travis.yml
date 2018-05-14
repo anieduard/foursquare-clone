@@ -1,8 +1,16 @@
-osx_image: xcode9
+osx_image: xcode9.3
 language: objective-c
 cache:
 - bundler
 - cocoapods
 
+before_install:
+  - gem install cocoapods
+  - pod repo update
+
 script:
   - xcodebuild clean test -quiet -workspace Foursquare.xcworkspace -scheme Foursquare -destination 'platform=iOS Simulator,name=iPhone 5s'
+  - bundle exec danger
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
