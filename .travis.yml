@@ -5,6 +5,7 @@ cache:
 - cocoapods
 
 before_install:
+  - brew update
   - pod repo update
 
 script:
