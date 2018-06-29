@@ -16,7 +16,7 @@ class PlacesServiceSpec: XCTestCase {
     
     func testMapResponseToModel() {
         let provider = MoyaProvider<PlacesApi>(stubClosure: MoyaProvider.immediatelyStub)
-        placesService = PlacesService.init(provider: provider)
+        placesService = PlacesService(provider: provider)
         
         var responseData: LocationPlaces?
         
@@ -37,7 +37,7 @@ class PlacesServiceSpec: XCTestCase {
         let provider = MoyaProvider<PlacesApi>(
             endpointClosure: failureEndpointClosure,
             stubClosure: MoyaProvider.immediatelyStub)
-        placesService = PlacesService.init(provider: provider)
+        placesService = PlacesService(provider: provider)
         
         _ = placesService.placesAround(latitude: -23.5666151, longitude: -46.6463977)
             .subscribe { event in

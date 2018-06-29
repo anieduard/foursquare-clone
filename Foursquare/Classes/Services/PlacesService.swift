@@ -11,11 +11,11 @@ import RxSwift
 import Moya
 import Moya_ModelMapper
 
-protocol PlacesDatasource {
+protocol PlacesDataSource {
     func placesAround(latitude: Double, longitude: Double) -> Observable<LocationPlaces>
 }
 
-struct PlacesService: PlacesDatasource {
+struct PlacesService: PlacesDataSource {
     
     private let provider: MoyaProvider<PlacesApi>
     
